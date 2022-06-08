@@ -23,17 +23,6 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
 
-                           <div class="dropdown">
-                              <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuBoton"
-                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              Ventas
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuBoton">
-                            <a href="{% url 'perros' %}" class="dropdown-item">Comida Perritos</a>
-                            <a href="{% url 'gatos' %}" class="dropdown-item">Comida Gatitos</a>
-                            <a href="{% url 'accesorios' %}" class="dropdown-item">Accesorios</a>
-                          </div>            
-                          </div>
 
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -41,6 +30,9 @@
                                     <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Inicio</a>
                     
                             </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="{% url 'carro' %}">Carro</a>
+                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{% url 'formulariocontacto' %}">Contactanos</a>
                                 </li>
@@ -52,7 +44,13 @@
                               </li>
                               <li class="nav-item">
                                 <a class="nav-link" href="{% url 'listarproductos' %}">Lista Productos</a>
-                            </li>                           
+                              
+                            </li>  
+                            <li class="nav-item">
+                              <a class="nav-link" href="{% url 'formagregar' %}">Opcion Producto</a>
+                            
+                          </li>            
+                        </li>               
                                 </ul>
                             </div>
                             </div>

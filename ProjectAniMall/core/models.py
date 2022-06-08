@@ -9,4 +9,3 @@ class comidaperro(models.Model):
     codigo = models.CharField(max_length=11, unique=True)
     nombre = models.CharField(max_length=50)
 
-

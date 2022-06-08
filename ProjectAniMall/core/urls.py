@@ -1,6 +1,6 @@
 from urllib.parse import urlparse
 from django.urls import path
-from .views import index, gatos, accesorios, formulariocontacto, login, mostrarperros, perros, listarproductos
+from .views import index, gatos, accesorios, formulariocontacto, login, mostrarperros, perros, listarproductos, carro,formagregar,formModificar
 
 
 urlpatterns = [
@@ -12,4 +12,10 @@ urlpatterns = [
    path('mostrarperros/', mostrarperros,name="mostrarperros"),
    path('perros/', perros,name="perros"),
    path('listarproductos/', listarproductos,name="listarproductos"),
+   path('carro/', carro,name="carro"),
+   path('formagregar',formagregar, name="formagregar" ),
+   path('formModificar',formModificar, name="formModificar" ),
+   
+
+   
 ]
